@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Best Selling Flowers $ Gifts</title>
+	<script>
+	window.onload = function(tableCell1,picPlaceHolder1){
+	
+	  function changeImgs(tableCell,picPlaceHolder){
+		var lis = document.getElementById(tableCell).getElementsByTagName("li");
+		var imgs = document.getElementById(picPlaceHolder).getElementsByTagName("img");
+		
+		for(var i=0;i<lis.length;i++){
+			lis[i].id = i;
+			lis[i].onmouseover = function(){
+				for(var j=0;j<imgs.length;j++){
+					imgs[j].style.display = "none";
+				}
+				imgs[this.id].style.display = "block";
+			}
+		}
+	  }
+	  
+	  changeImgs("tableCell1","picPlaceHolder1");
+	  changeImgs("tableCell2","picPlaceHolder2");
+	  changeImgs("tableCell3","picPlaceHolder3");
+	  changeImgs("tableCell4","picPlaceHolder4");
+	  changeImgs("tableCell5","picPlaceHolder5");
+	}
+	</script>
+	<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+		font-family:Arial,Helvetica,sans-serif;
+		font-size:small;
+		color:#333;
+	}
+	
+	h1{
+		font-size: 145%;
+		line-height: 1;
+		margin: 20px 50px;
+		font-weight:400;
+	}
+	
+	h2{
+		float:left;
+		padding:15px 0;
+		font-size:20px;
+		font-weight:bold;
+		color:#333;
+	}
+	
+	h3{
+		float:left;
+		width: 220px;
+		height:20px;
+		font-size:110%;
+		font-weight:100;
+		padding:10px 0 20px;
+		border-top:1px solid #ccc;
+	}
+	
+	em{
+		font-weight:bold;
+		letter-spacing:1px;
+	}
+	
+	div#tableContainer{
+		display:table;
+		width:930px;
+		margin:0 auto;
+		border-spacing:10px 0;
+	}
+	
+	div.tableRow{
+		display:table-row;
+	}
+	
+	div.tableCell{
+		display:table-cell;
+		height:390px;
+		width:220px;
+	}
+	
+	span.vase{
+		display:inline-block;
+		float:left;
+		margin-top: 15px;
+	}
+	
+	span.prePrice{
+		font-size:20px;
+		color:#999;
+		text-decoration:line-through;
+	}
+	
+	ul{
+		list-style:none;
+		float:left;
+		height:38px;
+	}
+	
+	ul li{
+		float:left;
+	}
+	
+	div.picPlaceHolder{
+		height:220px;
+		width:220px;
+		position:relative;
+	}
+	
+	div.picPlaceHolder>a>img{
+		display:none;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+	</style>
+</head>
+<body>
+	<h1>Best Selling Flowers & Gifts</h1>
+	<div id="tableContainer">
+		<div class="tableRow">
+			<div class="tableCell" id="tableCell1"><!-- 第一个tableCell开始 -->
+				<div class="picPlaceHolder" id="picPlaceHolder1">
+				<a href="#"><img style="display:block" src="images/pa1.jpg" alt="picture a1"></a>
+				<a href="#"><img src="images/pa2.jpg" alt="picture a2"></a>
+				<a href="#"><img src="images/pa3.jpg" alt="picture a3"></a>
+				</div>
+				<span class="vase">Containers:</span>
+				<ul>
+					<li><a href="#"><img src="images/ia1.jpg" /></a></li>
+					<li><a href="#"><img src="images/ia2.jpg" /></a></li>
+					<li><a href="#"><img src="images/ia3.jpg" /></a></li>
+				</ul>
+				<h3><em>new</em>&nbsp;Santa's Workshop</h3>
+				<h2><span class="prePrice">$29.99</span>&nbsp;$19.99</h2>
+			</div><!-- 第一个tableCell结束 -->
+			
+			<div class="tableCell" id="tableCell2"><!-- 第二个tableCell开始 -->
+				<div class="picPlaceHolder" id="picPlaceHolder2">
+				<a href="#"><img style="display:block" src="images/pb1.jpg" alt="picture b1"></a>
+				<a href="#"><img src="images/pb2.jpg" alt="picture b2"></a>
+				<a href="#"><img src="images/pb3.jpg" alt="picture b3"></a>
+				<a href="#"><img src="images/pb4.jpg" alt="picture b4"></a>
+				</div>
+				<span class="vase">Containers:</span>
+				<ul>
+					<li><a href="#"><img src="images/ib1.jpg" /></a></li>
+					<li><a href="#"><img src="images/ib2.jpg" /></a></li>
+					<li><a href="#"><img src="images/ib3.jpg" /></a></li>
+					<li><a href="#"><img src="images/ib4.jpg" /></a></li>
+				</ul>
+				<h3><em></em>A Dozen Hugs, a Dozen Kisses</h3>
+				<h2><span class="prePrice">$49.99</span>&nbsp;$39.99</h2>
+			</div><!-- 第二个tableCell结束 -->
+			
+			<div class="tableCell" id="tableCell3"><!-- 第三个tableCell开始 -->
+				<div class="picPlaceHolder" id="picPlaceHolder3">
+				<a href="#"><img src="images/pc1.jpg" alt="picture c1"></a>
+				<a href="#"><img src="images/pc2.jpg" alt="picture c2"></a>
+				<a href="#"><img src="images/pc3.jpg" alt="picture c3"></a>
+				<a href="#"><img style="display:block" src="images/pc4.jpg" alt="picture c4"></a>
+				</div>
+				<span class="vase">Containers:</span>
+				<ul>
+					<li><a href="#"><img src="images/ic1.jpg" /></a></li>
+					<li><a href="#"><img src="images/ic2.jpg" /></a></li>
+					<li><a href="#"><img src="images/ic3.jpg" /></a></li>
+					<li><a href="#"><img src="images/ic4.jpg" /></a></li>
+				</ul>
+				<h3><em></em>Candy Cane Lane Bouquet</h3>
+				<h2><span class="prePrice"></span>$49.99</h2>
+			</div><!-- 第三个tableCell结束 -->
+			
+			<div class="tableCell" id="tableCell4"><!-- 第四个tableCell开始 -->
+				<div class="picPlaceHolder" id="picPlaceHolder4">
+				<a href="#"><img src="images/pd1.jpg" alt="picture d1"></a>
+				<a href="#"><img src="images/pd2.jpg" alt="picture d2"></a>
+				<a href="#"><img src="images/pd3.jpg" alt="picture d3"></a>
+				<a href="#"><img style="display:block" src="images/pd4.jpg" alt="picture d4"></a>
+				</div>
+				<span class="vase">Containers:</span>
+				<ul>
+					<li><a href="#"><img src="images/id1.jpg" /></a></li>
+					<li><a href="#"><img src="images/id2.jpg" /></a></li>
+					<li><a href="#"><img src="images/id3.jpg" /></a></li>
+					<li><a href="#"><img src="images/id4.jpg" /></a></li>
+				</ul>
+				<h3><em>new</em>&nbsp;Snowflakes and Embers Centerpiece</h3>
+				<h2><span class="prePrice">$49.99</span>&nbsp;$29.99</h2>
+			</div><!-- 第四个tableCell结束 -->
+		</div>
+		<div class="tableRow">
+			<div class="tableCell" id="tableCell5"><!-- 第五个tableCell开始 -->
+				<div class="picPlaceHolder" id="picPlaceHolder5">
+				<a href="#"><img src="images/pe1.jpg" alt="picture e1"></a>
+				<a href="#"><img style="display:block" src="images/pe2.jpg" alt="picture e2"></a>
+				<a href="#"><img src="images/pe3.jpg" alt="picture e3"></a>
+				<a href="#"><img src="images/pe4.jpg" alt="picture e4"></a>
+				</div>
+				<span class="vase">Containers:</span>
+				<ul>
+					<li><a href="#"><img src="images/ie1.jpg" /></a></li>
+					<li><a href="#"><img src="images/ie2.jpg" /></a></li>
+					<li><a href="#"><img src="images/ie3.jpg" /></a></li>
+					<li><a href="#"><img src="images/ie4.jpg" /></a></li>
+				</ul>
+				<h3><em></em>&nbsp;Candy Cane Lilies</h3>
+				<h2><span class="prePrice"></span>&nbsp;$39.99</h2>
+			</div><!-- 第五个tableCell结束 -->
+			
+			<div class="tableCell" id="tableCell6"><!-- 第六个tableCell开始 -->
+				<div class="picPlaceHolder" id="picPlaceHolder6">
+				<a href="#"><img style="display:block" src="images/f.jpg" alt="picture g"></a>
+				</div>
+				<span class="vase">Containers:</span>
+				<ul>
+					<li></li>
+				</ul>
+				<h3><em>new</em>&nbsp;Merry Christmas Azalea</h3>
+				<h2><span class="prePrice"></span>&nbsp;$49.99</h2>
+			</div><!-- 第六个tableCell结束 -->
+			
+			<div class="tableCell" id="tableCell7"><!-- 第七个tableCell开始 -->
+				<div class="picPlaceHolder" id="picPlaceHolder7">
+				<a href="#"><img style="display:block" src="images/g.jpg" alt="picture g"></a>
+				</div>
+				<span class="vase">Containers:</span>
+				<ul>
+					<li></li>
+				</ul>
+				<h3><em>new</em>&nbsp;Santa’s Sleigh Centerpiece</h3>
+				<h2><span class="prePrice"></span>&nbsp;$24.99</h2>
+			</div><!-- 第七个tableCell结束 -->
+			
+			<div class="tableCell" id="tableCell8"><!-- 第八个tableCell开始 -->
+				<div class="picPlaceHolder" id="picPlaceHolder8">
+				<a href="#"><img style="display:block" src="images/h.jpg" alt="picture h"></a>
+				</div>
+				<span class="vase">Containers:</span>
+				<ul>
+					<li></li>
+				</ul>
+				<h3><em></em>Christmas Garland</h3>
+				<h2><span class="prePrice"></span>$39.99</h2>
+			</div><!-- 第八个tableCell结束 -->
+		</div>
+	</div><!-- end tableContainer -->
+	
+</body>
+</html>
